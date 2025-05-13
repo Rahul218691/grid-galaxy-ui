@@ -12,8 +12,8 @@ const Sidebar = ({ collapsed, toggleCollapse }) => {
   
   return (
     <aside className={cn(
-      "bg-sidebar h-screen transition-all duration-300 border-r border-border flex flex-col",
-      collapsed ? "w-20" : "w-64"
+      "fixed md:static z-10 bg-sidebar h-screen transition-all duration-300 border-r border-border flex flex-col",
+      collapsed ? "w-0 md:w-20 overflow-hidden" : "w-64"
     )}>
       <div className={cn(
         "flex items-center p-4 border-b border-border",

@@ -25,9 +25,9 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <div className="flex min-h-screen w-full">
+          <div className="flex min-h-screen w-full overflow-hidden">
             <Sidebar collapsed={sidebarCollapsed} toggleCollapse={toggleSidebar} />
-            <main className={`flex-1 transition-all duration-300 ${sidebarCollapsed ? 'ml-20' : 'ml-64'}`}>
+            <main className={`flex-1 transition-all duration-300 ${sidebarCollapsed ? 'ml-0 md:ml-20' : 'ml-0 md:ml-64'}`}>
               <div className="flex items-center justify-end py-4 px-6 border-b">
                 <div className="flex items-center">
                   <span className="text-sm text-muted-foreground mr-4">
